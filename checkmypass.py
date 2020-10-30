@@ -39,6 +39,5 @@ def main(passwordFile):
                 print(f'{password} was not found')
         return 'done'
 
-
-if __name__ == 'main':
-    main('../passwords.txt')
+if __name__ == '__main__':
+    print(main('../passwords.txt'))
