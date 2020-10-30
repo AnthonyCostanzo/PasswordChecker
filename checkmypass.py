@@ -1,7 +1,7 @@
 from hashlib import sha1
 import requests
 import hashlib
-import sys
+
 
 
 def request_api_data(queryCharacters):
