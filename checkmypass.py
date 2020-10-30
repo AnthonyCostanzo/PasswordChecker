@@ -26,8 +26,7 @@ def pwned_api_check(password):
 
 def main(passwordFile):
     with open(passwordFile,'r') as file:
-        passwords = file.readlines()
-        passwords="".join(passwords).splitlines()
+        passwords = "".join(file.readlines()).splitlines()
         for password in passwords:
             count = pwned_api_check(password)
             if count:
